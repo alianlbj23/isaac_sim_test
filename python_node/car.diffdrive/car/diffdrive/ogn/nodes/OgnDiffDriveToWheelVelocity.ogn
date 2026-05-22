@@ -1,0 +1,46 @@
+{
+  "OgnDiffDriveToWheelVelocity": {
+    "version": 1,
+    "categories": "robotics",
+    "description": [
+      "Convert cmd_vel to differential-drive wheel velocity"
+    ],
+    "language": "Python",
+    "metadata": {
+      "uiName": "Diff Drive To Wheel Velocity"
+    },
+    "inputs": {
+      "execIn": {
+        "type": "execution"
+      },
+      "linearX": {
+        "type": "double",
+        "default": 0.0,
+        "description": "cmd_vel.linear.x [m/s]"
+      },
+      "angularZ": {
+        "type": "double",
+        "default": 0.0,
+        "description": "cmd_vel.angular.z [rad/s]"
+      },
+      "wheelRadius": {
+        "type": "double",
+        "default": 0.05,
+        "description": "Wheel radius R [m]"
+      },
+      "wheelSeparation": {
+        "type": "double",
+        "default": 0.40,
+        "description": "Wheel separation L [m]"
+      }
+    },
+    "outputs": {
+      "leftDegPerSec": {
+        "type": "double"
+      },
+      "rightDegPerSec": {
+        "type": "double"
+      }
+    }
+  }
+}

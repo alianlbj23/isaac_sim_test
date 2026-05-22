@@ -1,0 +1,17 @@
+[package]
+version = "1.0.0"
+title = "Car DiffDrive"
+description = "Differential Drive Custom Node"
+category = "Graph"
+
+[dependencies]
+"omni.graph.core" = {}
+"omni.graph" = {}
+"omni.graph.tools" = {}
+
+[[python.module]]
+name = "car.diffdrive"
+
+[fswatcher.patterns]
+include = ["*.ogn", "*.py"]
+exclude = ["Ogn*Database.py"]
