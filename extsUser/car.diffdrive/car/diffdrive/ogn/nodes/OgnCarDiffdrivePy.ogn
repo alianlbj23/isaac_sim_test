@@ -1,0 +1,51 @@
+{
+    "OgnCarDiffdrivePy": {
+        "version": 1,
+        "language": "python",
+        "icon": "icons/icon.svg",
+        "uiName": "CarDiffdrivePy",
+        "description": [
+            "Convert ROS2 cmd_vel linear.x and angular.z to differential-drive wheel angular velocities in rad/s."
+        ],
+        "categoryDefinitions": "config/CategoryDefinition.json",
+        "categories": ["extension:Category"],
+        "inputs": {
+            "linearX": {
+                "type": "double",
+                "uiName": "Linear X",
+                "description": "cmd_vel.linear.x [m/s]",
+                "default": 0.0
+            },
+            "angularZ": {
+                "type": "double",
+                "uiName": "Angular Z",
+                "description": "cmd_vel.angular.z [rad/s]",
+                "default": 0.0
+            },
+            "wheelRadius": {
+                "type": "double",
+                "uiName": "Wheel Radius",
+                "description": "Wheel radius R [m]",
+                "default": 0.05
+            },
+            "wheelSeparation": {
+                "type": "double",
+                "uiName": "Wheel Separation",
+                "description": "Wheel separation L [m]",
+                "default": 0.4
+            }
+        },
+        "outputs": {
+            "leftRadPerSec": {
+                "type": "double",
+                "uiName": "Left Rad Per Sec",
+                "description": "Left wheel angular velocity [rad/s]"
+            },
+            "rightRadPerSec": {
+                "type": "double",
+                "uiName": "Right Rad Per Sec",
+                "description": "Right wheel angular velocity [rad/s]"
+            }
+        }
+    }
+}

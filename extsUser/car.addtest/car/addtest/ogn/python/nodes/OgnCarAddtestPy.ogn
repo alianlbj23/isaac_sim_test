@@ -1,0 +1,34 @@
+{
+    "CarAddtestPy": {
+        "version": 1,
+        "language": "python",
+        "icon": "icons/icon.svg",
+        "uiName": "OgnCarAddtestPy",
+        "description": [
+            "Add two input numbers and output the result."
+        ],
+        "categoryDefinitions": "config/CategoryDefinition.json",
+        "categories": ["extension:Category"],
+        "inputs": {
+            "inputA": {
+                "type": "double",
+                "uiName": "Input A",
+                "description": "Description for this attribute",
+                "default": 0.0
+            },
+            "InputB": {
+                "type": "double",
+                "uiName": "Input B",
+                "description": "Description for this attribute",
+                "default": "0.0",
+            }
+        },
+        "outputs": {
+            "outputAttribute1": {
+                "type": "double",
+                "uiName": "Output Attribute 1",
+                "description": "Description for this attribute"
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+class OgnCarDiffdrivePy:
+    @staticmethod
+    def compute(db):
+        vx = db.inputs.linearX
+        omega = db.inputs.angularZ
+
+        radius = db.inputs.wheelRadius
+        separation = db.inputs.wheelSeparation
+
+        if radius == 0:
+            db.log_error("wheelRadius must not be zero")
+            return False
+
+        left_rad = vx / radius - (separation * omega) / (2.0 * radius)
+        right_rad = vx / radius + (separation * omega) / (2.0 * radius)
+
+        db.outputs.leftRadPerSec = left_rad
+        db.outputs.rightRadPerSec = right_rad
+
+        return True
