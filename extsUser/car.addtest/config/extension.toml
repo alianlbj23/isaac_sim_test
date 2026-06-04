@@ -19,6 +19,9 @@ icon = "data/icon.png"
 "omni.graph" = {}
 "omni.graph.tools" = {}
 
+[[python.module]]
+name = "car.addtest"
+
 [settings]
 exts."car.addtest".timeout = 5
 

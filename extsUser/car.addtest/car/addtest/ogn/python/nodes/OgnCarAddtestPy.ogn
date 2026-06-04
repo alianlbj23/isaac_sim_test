@@ -20,13 +20,13 @@
                 "type": "double",
                 "uiName": "Input B",
                 "description": "Description for this attribute",
-                "default": "0.0",
+                "default": 0.0
             }
         },
         "outputs": {
-            "outputAttribute1": {
+            "outputs": {
                 "type": "double",
-                "uiName": "Output Attribute 1",
+                "uiName": "outputs",
                 "description": "Description for this attribute"
             }
         }
