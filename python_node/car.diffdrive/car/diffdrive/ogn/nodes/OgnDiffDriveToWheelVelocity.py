@@ -19,7 +19,7 @@ class OgnDiffDriveToWheelVelocity:
         left_rad = vx / radius - (separation * omega) / (2.0 * radius)
         right_rad = vx / radius + (separation * omega) / (2.0 * radius)
 
-        db.outputs.leftDegPerSec = left_rad * 180.0 / math.pi
-        db.outputs.rightDegPerSec = right_rad * 180.0 / math.pi
+        db.outputs.leftDegPerSec = left_rad
+        db.outputs.rightDegPerSec = right_rad
 
         return True
